@@ -5,7 +5,11 @@ internal class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-        builder.Services.AddControllersWithViews();
+        {
+            builder.Services.AddControllersWithViews();
+
+            builder.Services.Configure<RouteOptions>((options) => { options.LowercaseUrls = true; });
+        }
 
         var app = builder.Build();
 
@@ -26,7 +30,8 @@ internal class Program
 
         app.MapControllerRoute(
             name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}");
+            pattern: "{controller=Home}/{action=Index}/{id?}"
+        );
 
         app.Run();
     }
