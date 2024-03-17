@@ -16,11 +16,11 @@ interface Person {
 }
 
 function greeter(person: Person) {
-  return "Olá, " + person.firstName + " " + person.lastName;
+  return 'Olá, ' + person.firstName + ' ' + person.lastName;
 }
 
-const user = new Student("Murilo", "Sanches");
+const user = new Student('Murilo', 'Sanches');
 
 function TSButton() {
-  document.getElementById("ts-example").innerHTML = greeter(user);
+  document.getElementById('ts-example').innerHTML = greeter(user);
 }
