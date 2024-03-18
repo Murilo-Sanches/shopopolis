@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "egKsjVEJtLUyg4fIGmgqxgMUAQ+W+l5NvKNK9Py3m3vCDt/dnBPVSSoZlT6HiquxMKl8YCCcHnEUplU+vdY+aw==",
+  "dgSpecHash": "ODVaMep15k2clF0ujDWqx9HhmZpFPUQEmnktBkPdnPk4kDrrp4kegu+hUty0PW4/mUsOe3KgDl1DaTzHFg+wXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\muril\\Desktop\\Shopopolis\\Shopopolis.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\muril\\.nuget\\packages\\microsoft.typescript.msbuild\\5.4.2\\microsoft.typescript.msbuild.5.4.2.nupkg.sha512"
+  ],
   "logs": []
 }
