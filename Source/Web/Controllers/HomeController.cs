@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Shopopolis.Models;
+using Shopopolis.Source.Core.Models;
 
-namespace Shopopolis.Controllers;
+namespace Shopopolis.Source.Web.Controllers;
 
 public class HomeController : Controller
 {
