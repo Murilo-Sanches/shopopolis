@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Mvc.Razor;
+using Shopopolis.Source.Configurations;
+
 internal class Program
 {
     private static void Main(string[] args)
@@ -9,6 +12,10 @@ internal class Program
             builder.Services.AddControllersWithViews();
 
             builder.Services.Configure<RouteOptions>((options) => { options.LowercaseUrls = true; });
+            builder.Services.Configure<RazorViewEngineOptions>((options) =>
+            {
+                options.ViewLocationExpanders.Add(new ViewLocation());
+            });
         }
 
         var app = builder.Build();
