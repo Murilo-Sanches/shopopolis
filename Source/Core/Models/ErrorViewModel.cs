@@ -1,4 +1,4 @@
-namespace Shopopolis.Models;
+namespace Shopopolis.Source.Core.Models;
 
 public class ErrorViewModel
 {
