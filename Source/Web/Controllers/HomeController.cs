@@ -10,11 +10,15 @@ public class HomeController(ILogger<HomeController> logger) : Controller
 
     public IActionResult Index()
     {
+        ViewBag.CurrentYear = DateTime.Now.Year;
+
         return View();
     }
 
     public IActionResult Privacy()
     {
+        ViewBag.CurrentYear = DateTime.Now.Year;
+
         return View();
     }
 
