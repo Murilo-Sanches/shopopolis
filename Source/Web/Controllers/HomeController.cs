@@ -25,6 +25,8 @@ public class HomeController(ILogger<HomeController> logger) : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
+        ViewBag.CurrentYear = DateTime.Now.Year;
+
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
