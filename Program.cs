@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
 using Shopopolis.Source.Configurations;
 
 internal class Program
@@ -16,6 +17,8 @@ internal class Program
             {
                 options.ViewLocationExpanders.Add(new ViewLocation());
             });
+
+            builder.Services.AddDbContext<DataContext>((options) => { });
         }
 
         var app = builder.Build();
